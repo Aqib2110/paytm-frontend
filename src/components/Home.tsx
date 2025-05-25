@@ -25,7 +25,7 @@ if(!token)
 {
 navigate("/signin");
 }
-fetch("https://paytm-frontend-cyan.vercel.app/api/v1/account/balance",{
+fetch("https://paytm-backend-tan.vercel.app/api/v1/account/balance",{
     headers:{
         'Authorization':"Bearer " + token
     }
@@ -66,7 +66,7 @@ clearTimeout(TimerRef.current);
 }
 
     TimerRef.current = setTimeout(() => {
-fetch(`https://paytm-frontend-cyan.vercel.app/api/v1/user/bulk?filter=${value}`,{
+fetch(`https://paytm-backend-tan.vercel.app/api/v1/user/bulk?filter=${value}`,{
     headers:{
         "Authorization": "Bearer " + token
     }
@@ -85,7 +85,7 @@ const handleSend = ()=>{
     {
         return;
     }
-    fetch("https://paytm-frontend-cyan.vercel.app/api/v1/account/transfer",{
+    fetch("https://paytm-backend-tan.vercel.app/api/v1/account/transfer",{
         method:"POST",
         headers:{
             'Content-Type':'application/json',
