@@ -45,7 +45,7 @@ seterror(errorMessage);
 return;
       }
     setloading(true);
-    fetch("http://localhost:3000/api/v1/user/signup", {
+    fetch("https://paytm-frontend-cyan.vercel.app/api/v1/user/signup", {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',
